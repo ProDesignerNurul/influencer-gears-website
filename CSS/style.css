@@ -1,0 +1,170 @@
+/* Google Fonts Linked  */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    ;
+}
+
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+/* --------------
+Menu Bar Design  
+-----------------*/
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+#nav-bar a{
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+}
+
+/*------------------
+ Influencer Ara Design 
+----------------------- */
+.influencer-journey{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.journey h1{
+    font-size: 5vw;
+}
+.button-style{
+    background-image: linear-gradient(to right, orange, tomato);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+
+/*-----------------
+ company logo area  
+ -----------------*/
+
+.company-logo{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    border-top: 2px solid darkgray;
+    border-bottom: 2px solid darkgray;
+    padding: 20px 0px;
+}
+
+ /*--------------
+  popular area design  
+  ----------------*/
+
+  #popular-h2{
+    text-align: center;
+  }
+.popular-area{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.popular-box{
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px gray;
+}
+.popular-box img{
+    width: 100%;
+}
+.filled{
+    color: gold;
+}
+#see-more-h3{
+    color: orange;
+    text-align: right;
+}
+
+
+/*----------------
+ featured products area  
+ ------------------*/
+
+ .featured-products-area{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+ }
+ .featured-products-area h2{
+    font-size: 3vw;
+ }
+ .featured-products-area img{
+    width: 100%;
+ }
+
+
+ /* Responsive Deisgn Star  */
+
+ @media screen and (max-width: 576px) {
+    .influencer-journey{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+ }
+
+ @media screen and (min-width: 577px) and (max-width: 992px) {
+    .influencer-journey{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+ }
+
+/* -------------------------------------------------- */
+
+ @media screen and (max-width: 576px) {
+    .company-logo{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+ }
+
+ @media screen and (min-width: 577px) and (max-width: 992px) {
+    .company-logo{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+ }
+
+/* -------------------------------------------------- */
+
+ @media screen and (max-width: 576px) {
+    .popular-area{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+ }
+
+ @media screen and (min-width: 577px) and (max-width: 992px) {
+    .popular-area{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+ }
+
+/* -------------------------------------------------- */
+
+ @media screen and (max-width: 576px) {
+    .featured-products-area{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+ }
+
+ @media screen and (min-width: 577px) and (max-width: 992px) {
+    .featured-products-area{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+ }
